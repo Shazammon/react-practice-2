@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
-  useState(4)
+  const [ count, setCount ] = useState(4)
 
   return (
     <>
