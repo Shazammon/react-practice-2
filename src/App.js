@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <button onClick={decrementCount}>-</button>
-    <span>0</span>
+    <span>{count}</span>
     <button>+</button>
     </>
   );
