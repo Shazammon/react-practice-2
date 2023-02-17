@@ -12,7 +12,10 @@ function App() {
   // })
 
   // const [ count, setCount ] = useState(countInitial())
-  const [ count, setCount ] = useState({count: 4, theme: 'blue'})
+  const [ state, setState ] = useState({count: 4, theme: 'blue'})
+  const count = state.count
+  const theme = state.theme
+
 
   function decrementCount() {
     setCount(prevCount => prevCount - 1)
