@@ -37,6 +37,7 @@ function App() {
     <button onClick={() => {setCount(prevCount => prevCount - 1)}}>-</button>
     <span>{count}</span>
     <span>{theme}</span>
+    {/* <button onClick={incrementCount}>+</button> */}
     <button onClick={incrementCount}>+</button>
     </>
   );
