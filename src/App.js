@@ -5,9 +5,11 @@ function App() {
 
   function decrementCount() {
     setCount(prevCount => prevCount - 1)
+  }
 
   function incrementCount() {
     setCount(prevCount => prevCount + 1)
+  }
 
   return (
     <>
