@@ -6,10 +6,12 @@ function countInitial() {
 }
 
 function App() {
-  const [ count, setCount ] = useState(() => {
-    console.log('function was run') 
-    return 4
-  })
+  // const [ count, setCount ] = useState(() => {
+  //   console.log('function was run') 
+  //   return 4
+  // })
+
+  const [ count, setCount ] = useState(countInitial())
 
   function decrementCount() {
     setCount(prevCount => prevCount - 1)
