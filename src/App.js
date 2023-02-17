@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 
+function countInitial() {
+  console.log('run function')
+  return 4
+}
+
 function App() {
   const [ count, setCount ] = useState(() => {
     console.log('function was run') 
