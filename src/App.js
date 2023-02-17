@@ -20,7 +20,7 @@ function App() {
   function decrementCount() {
     // setCount(prevCount => prevCount - 1)
     setState(prevState => {
-      return { count: prevState.count + 1 }
+      return { count: prevState.count - 1 }
     })
   }
 
