@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import UseEffectPractice from "./UseEffectPractice";
 
 function countInitial() {
   console.log('run function')
@@ -44,6 +45,8 @@ function App() {
     <span>{theme}</span>
     {/* <button onClick={incrementCount}>+</button> */}
     <button onClick={() => {setCount(prevCount => prevCount + 1)}}>+</button>
+
+    <UseEffectPractice />
     </>
   );
 }
