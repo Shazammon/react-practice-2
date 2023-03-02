@@ -5,7 +5,7 @@ export default function UseEffectPractice() {
     return
         <>
         <div>
-            <button onClick={} >Posts</button>
+            <button onClick={() => setResourceType('posts')} >Posts</button>
         </div>
         </>
 }
