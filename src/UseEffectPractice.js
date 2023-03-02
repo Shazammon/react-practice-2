@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 
 export default function UseEffectPractice() {
     const [resourceType, setResourceType] = useState('posts')
+    const [items, setItems ] = useState()
 
     console.log('render')
 
