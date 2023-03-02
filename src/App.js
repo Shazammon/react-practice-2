@@ -6,9 +6,9 @@ function countInitial() {
   
 }
 
-function AppTwo() {
-  const [count, setCount] = useState(4)
-}
+// function AppTwo() {
+//   const [count, setCount] = useState(4)
+// }
 
 function App() {
   // const [ count, setCount ] = useState(() => {
@@ -43,7 +43,7 @@ function App() {
     <span>{count}</span>
     <span>{theme}</span>
     {/* <button onClick={incrementCount}>+</button> */}
-    <button onClick={() => {setCount(prevCount + 1)}}>+</button>
+    <button onClick={() => {setCount(prevCount => prevCount + 1)}}>+</button>
     </>
   );
 }
