@@ -25,8 +25,13 @@ export default function UseEffectPractice() {
                 <button onClick={() => setResourceType('comments')} >Comments</button>
             </div>
             <h1>{resourceType}</h1>
-            {items.map(item => {
+            {/* {items.map(item => {
                 return (<pre>{resourceType === 'posts' ? JSON.stringify(item.title) : JSON.stringify(item.name)}</pre>)
+            })} */}
+            {items.map(item => {
+                return (
+                    <pre>{JSON.stringify(item)}</pre>
+                )
             })}
         </>
     )
