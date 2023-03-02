@@ -6,7 +6,10 @@ export default function UseEffectPractice() {
     console.log('render')
 
     useEffect(() => {
-        console.log('resourcetype changed')
+        // console.log('resourcetype changed')
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then(response => response.json())
+            .then(json => console.log(json))
     }, [resourceType]) 
     return (
         <>
