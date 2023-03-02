@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react"
 
 export default function UseEffectPractice() {
     const [resourceType, setResourceType] = useState('posts')
+
+    useEffect(() => {
+        console.log('render')
+    }, [resourceType]) 
     return (
         <>
             <div>
@@ -9,6 +13,7 @@ export default function UseEffectPractice() {
                 <button onClick={() => setResourceType('users')} >Users</button>
                 <button onClick={() => setResourceType('comments')} >Comments</button>
             </div>
+            <h1>{resourceType}</h1>
         </>
     )
 }
