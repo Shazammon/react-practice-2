@@ -3,6 +3,11 @@ import React, { useState } from "react";
 function countInitial() {
   console.log('run function')
   return 4
+  
+}
+
+function AppTwo() {
+  const [count, setCount] = useState(4)
 }
 
 function App() {
