@@ -6,6 +6,8 @@ export default function UseEffectPractice() {
         <>
         <div>
             <button onClick={() => setResourceType('posts')} >Posts</button>
+            <button onClick={() => setResourceType('users')} >Users</button>
+            <button onClick={() => setResourceType('comments')} >Comments</button>
         </div>
         </>
 }
