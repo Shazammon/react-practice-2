@@ -46,7 +46,7 @@ function App() {
     {/* <button onClick={incrementCount}>+</button> */}
     {/* <button onClick={() => {setCount(prevCount => prevCount + 1)}}>+</button> */}
 
-    <UseEffectPractice />
+      <UseEffectPractice />
     </>
   );
 }
