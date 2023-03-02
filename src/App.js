@@ -40,11 +40,11 @@ function App() {
 
   return (
     <>
-    <button onClick={() => {setCount(prevCount => prevCount - 1)}}>-</button>
+    {/* <button onClick={() => {setCount(prevCount => prevCount - 1)}}>-</button>
     <span>{count}</span>
-    <span>{theme}</span>
+    <span>{theme}</span> */}
     {/* <button onClick={incrementCount}>+</button> */}
-    <button onClick={() => {setCount(prevCount => prevCount + 1)}}>+</button>
+    {/* <button onClick={() => {setCount(prevCount => prevCount + 1)}}>+</button> */}
 
     <UseEffectPractice />
     </>
