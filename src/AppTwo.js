@@ -15,7 +15,8 @@ export default function AppTwo() {
     return (
         <>
             <ThemeContext.Provider value={darkTheme}/>
-            <button
+            <button onClick={toggleTheme}>Toggle Theme</button>
+            
             
         </>
     )
