@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import AppTwo from "./AppTwo";
 import UseEffectPractice from "./UseEffectPractice";
+import AppTwo from "./AppTwo";
 
 function countInitial() {
   console.log('run function')
@@ -47,6 +49,7 @@ function App() {
     {/* <button onClick={() => {setCount(prevCount => prevCount + 1)}}>+</button> */}
 
       <UseEffectPractice />
+      <AppTwo />
     </>
   );
 }
