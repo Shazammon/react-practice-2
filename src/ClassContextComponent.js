@@ -13,7 +13,12 @@ export default class ClassContextComponent extends Component {
 
     render() {
         return (
-            
+            <ThemeContext.Consumer>
+                {darkTheme => {
+                    return <div style={this.themeStyles(darkTheme)}>Class Theme</div>
+                }}
+
+            </ThemeContext.Consumer>
         )
 
     }
