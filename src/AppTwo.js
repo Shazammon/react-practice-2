@@ -6,7 +6,11 @@ export const ThemeContet = React.createContext()
 
 export default function AppTwo() {
 
-    const
+    const [darkTheme, setDarkTheme] = useState(true)
+
+    function toggleTheme() {
+        setDarkTheme(prevDarkTheme => !prevDarkTheme)
+    }
 
     return (
         <>
