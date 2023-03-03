@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import AppTwo from "./AppTwo";
 import UseEffectPractice from "./UseEffectPractice";
-import AppTwo from "./AppTwo";
 
 function countInitial() {
   console.log('run function')
