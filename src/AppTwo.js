@@ -14,7 +14,9 @@ export default function AppTwo() {
 
     return (
         <>
-            <div>hi</div>
+            <ThemeContext.Provider value={darkTheme}/>
+            <button
+            
         </>
     )
 }
