@@ -1,8 +1,10 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "./AppTwo";
+import React from "react";
+import { useTheme, useThemeUpdate} from './ThemeContext'
 
 export default function FunctionContextComponent() {
-    const darkTheme = useContext(ThemeContext)
+    const darkTheme = useTheme()
+    const toggleTheme = useThemeUpdate()
+
     const themeStyles = {
         backgroundColor: darkTheme ? '#333' : '#CCC',
         color: darkTheme ? '#CCC' : '#333',
@@ -10,6 +12,10 @@ export default function FunctionContextComponent() {
         margin: '3rem'
     }
     return (
+        <>
+            <button onClick={toggleTheme}>Toggle Theme</button>
             <div style={themeStyles}>Function Theme</div>
+            <div>Hey what's up</div>
+        </>
     )
 }
