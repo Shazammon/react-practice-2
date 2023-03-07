@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import AppTwo from "./AppTwo";
 import UseEffectPractice from "./UseEffectPractice";
 
-function countInitial() {
-  console.log('run function')
-  return 4
+// function countInitial() {
+//   console.log('run function')
+//   return 4
   
-}
+// }
 
 // function AppTwo() {
 //   const [count, setCount] = useState(4)
@@ -48,7 +48,7 @@ function App() {
     {/* <button onClick={() => {setCount(prevCount => prevCount + 1)}}>+</button> */}
 
       <UseEffectPractice />
-      <AppTwo />
+      <AppTwo />z
     </>
   );
 }
